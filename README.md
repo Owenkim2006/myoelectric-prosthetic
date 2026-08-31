@@ -11,14 +11,6 @@ This project develops a functional myoelectric prosthetic hand for transradial a
 
 Benchmarked against the Cybathlon "Carry Bottles" task — gripping weighted bottles, placing them into a crate, and transporting the load.
 
----
-
-## Demo
-
-<!-- Add your demo GIF here -->
-![Prosthetic Demo](docs/figures/prosthetic-demo.gif)
-
-
 
 ---
 
@@ -87,8 +79,6 @@ A buffered voltage divider (2× 10kΩ) creates a stable Vcc/2 reference, enablin
 - Portable: dual 4×AA packs in parallel (~6V, doubled current capacity)
 
 ### Frequency Response
-
-![Bode Plot](docs/figures/bode-plot.png)
 
 Measured passband: 48–400 Hz. Overdamped filter design produces gradual roll-off at corner frequencies.
 
@@ -159,23 +149,21 @@ When the hand contacts an object, friction and reaction forces passively open th
 myoelectric-prosthetic/
   firmware/
     prosthetic_control.ino     # Arduino C++ state machine
+    flowchart.png              # Firmware flowchart
   electrical/
-    schematic.pdf              # Full system schematic
-    bode_plot.png              # Measured frequency response
-    falstad/
-      circuit.txt              # Falstad simulation export
-      README.md                # Simulation link + instructions
+    bodeplots.png             # Bode plots
+    schematic.png              # Full system schematic
+    falstad_diagram.txt                # Falstad simulation export
   pcb/
     gerbers/                   # Fabrication files
     prosthetic_pcb.kicad_pcb   # KiCad board file
     prosthetic.kicad_sch       # KiCad schematic
     bom.csv                    # Bill of materials
   mechanical/
-    fusion360_export.step      # Mechanical assembly
-    drawings/                  # Dimension drawings (PDF)
+    presentation.pdf
   docs/
     BME261_Final_Report.pdf    # Full project report
-    figures/                   # All figures referenced in README
+    bill_of_materials.pdf      # List of parts
 ```
 
 ---
