@@ -188,6 +188,9 @@ myoelectric-prosthetic/
 | Trigger delay | 500ms (intentional) |
 | Servo travel | 135°–150° |
 | Cybathlon task | Successfully demonstrated |
+| PCB | 2-layer through-hole, 0.4mm signal / 0.8mm power traces |
+| Ground | Solid B.Cu copper pour, thermal relief on all pads |
+| DRC | 0 errors, 0 unconnected items |
 
 ---
 
